@@ -1,6 +1,6 @@
 """
 Tipos de dados
-str     - String                | Textos
+str     - String                | Textos / Cadeia de caracteres
 int     - Inteiros              | Números positivos ou negativos ou Zero(sem ponto)
 float   - Real/Ponto flutuante  | Números positivos ou ou negativo ou Zero (com ponto)
 bool    - Booleano/Lógico       | Confere se os dados são Verdadeiro/Falso (True/False)
@@ -18,7 +18,7 @@ print('Nome', type('Nome'), bool('Nome'))
 print('Nome', type('Nome'), bool(''))
 
 #String: nome
-print('Cícero',type('Cícero'))
+print('Henrique',type('Henrique'))
 #Idade: int
 print('26',type(26))
 #Altura: float
