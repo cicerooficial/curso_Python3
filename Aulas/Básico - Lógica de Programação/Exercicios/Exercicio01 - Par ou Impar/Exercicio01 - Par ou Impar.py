@@ -5,14 +5,21 @@ Caso o usuário não digite um número inteiro,
 informe que não é um número inteiro.
 """
 
-numero = input('Digite um numero: ')
+numero = input('Digite um número inteiro: ')
 
-if numero.isnumeric():
-    numero = int(numero)
-    resultado = numero % 2
-    if resultado != 0:
-        print(f'O numero {numero} é Impar!')
-    else:
-        print(f'O numero {numero} é Par!')
+#Verifica se a variável está vazia
+while numero == "":
+    print('Tente digitar alguma coisa da próxima vez!\n')
+    numero = input('Digite um número inteiro: ')
+
+#Verifica se a variável é um número inteiro positivo
+while not numero.isdigit():
+    print('Não foi informado um número inteiro. Tente novamente! \n')
+    numero = input('Digite um número inteiro: ')
+
+numero = int(numero)
+resultado = numero % 2
+if resultado != 0:
+    print(f'O número {numero} é Impar!')
 else:
-    print('Não foi informado um número inteiro. Tente novamente!')
+    print(f'O número {numero} é Par!')
