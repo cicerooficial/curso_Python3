@@ -18,8 +18,8 @@ while not numero.isdigit():
     numero = input('Digite um número inteiro: ')
 
 numero = int(numero)
-resultado = numero % 2
-if resultado != 0:
-    print(f'O número {numero} é Impar!')
-else:
+
+if numero % 2 == 0:
     print(f'O número {numero} é Par!')
+else:
+    print(f'O número {numero} é Impar!')
