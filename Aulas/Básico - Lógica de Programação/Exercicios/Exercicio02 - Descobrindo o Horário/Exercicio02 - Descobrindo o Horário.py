@@ -22,7 +22,7 @@ minutos = input('*** Digite apenas número de 0 à 60 ***\n'
                 'Quantos minutos?: ')
 
 #Verifica se a variável está vazia
-while horario == "":
+while minutos == "":
     print('Tente digitar alguma coisa da próxima vez!\n')
     minutos = input('*** Digite apenas número de 0 à 60 ***\n'
                     'Quantos minutos?: ')
